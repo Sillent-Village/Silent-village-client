@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bloo_Bhai";
+  src: url("../../assets/font/BalooBhai-Regular.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  background-image: url("../../assets/img/totoro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 732px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.home__loginForm {
+  width: 30%;
+  padding: 0 6px;
+}
+.home__loginForm h1 {
+  font-family: "Bloo_Bhai";
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 6vh;
+}
+.home__loginForm--form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(221, 216, 216, 0.447);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  /* Mờ ảnh hưởng đến phần tử phía sau */
+  margin-top: 40px;
+}
+.home__loginForm--form input {
+  height: 36px;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: #fff8f8;
+  font-size: 14px;
+}
+.home__loginForm--form input:focus {
+  outline: none;
+}
+.home__loginForm--form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+.home__loginForm--form .show-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.home__loginForm--form .show-password div {
+  display: flex;
+  align-items: center;
+}
+.home__loginForm--form .show-password div input {
+  width: 15px;
+  height: 15px;
+}
+.home__loginForm--form .show-password div input[type=checkbox]:checked {
+  background-color: green;
+  /* Màu nền của checkbox khi được chọn */
+}
+.home__loginForm--form .show-password div span {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.home__loginForm--form .show-password a {
+  text-decoration: none;
+  color: #3d0557;
+}
+.home__loginForm--form button {
+  height: 38px;
+  border-radius: 6px;
+  border: 0;
+  background-color: #270536;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.home__loginForm--form p {
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+.home__loginForm--form p a {
+  text-decoration: none;
+  color: #6d0998;
+}
+
+.menu__language {
+  position: absolute;
+  right: 100px;
+  top: 40px;
+  height: 30px;
+  background-color: #fff;
+  padding: 0 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__language--img {
+  width: 30px;
+  height: 30px;
+}
+.menu__language--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.menu__language--showLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  background-color: rgba(230, 226, 221, 0.603);
+  margin-left: 5px;
+  border-radius: 6px;
+}
+.menu__language--showLanguage:hover {
+  cursor: pointer;
+}
+.menu__language--list {
+  list-style-type: none;
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  width: 45px;
+  border-radius: 6px;
+  background-color: #fff;
+  animation: showMenu 0.4s ease-in-out;
+}
+.menu__language--list li {
+  text-align: center;
+  padding: 3px;
+}
+.menu__language--list li:hover {
+  cursor: pointer;
+  background-color: #995bb46c;
+}
+.menu__language--list li:first-child:hover {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.menu__language--list li:last-child:hover {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+@keyframes showMenu {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__language--list .languageActive {
+  font-weight: bold;
+}
+
+.arrowdown-icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrowdown-icon.rotate-icon {
+  transform: rotate(180deg);
+}
