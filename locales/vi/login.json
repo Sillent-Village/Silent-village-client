@@ -1,0 +1,14 @@
+{
+  "login translator": {
+    "username": "Tên người dùng",
+    "title": "Làng lộng gió",
+    "password": "Mật khẩu",
+    "login": "Đăng nhập",
+    "show password": "Hiện mật khẩu",
+    "password retrieval": "Lấy lại mật khẩu",
+    "register": "Đăng ký",
+    "account": "Bạn chưa có tài khoản?",
+    "now": "ngay",
+    "exist account": "Bạn đã có tài khoản ?"
+  }
+}

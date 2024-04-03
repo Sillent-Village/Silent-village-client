@@ -1,0 +1,14 @@
+{
+  "login translator": {
+    "username": "Username",
+    "title": "Windy Village",
+    "password": "Password",
+    "login": "Login",
+    "show password": "Show password",
+    "password retrieval": "Password retrieval",
+    "register": "Register",
+    "account": "Do not have an account?",
+    "now": "now",
+    "exist account": "Do you already have an account"
+  }
+}
